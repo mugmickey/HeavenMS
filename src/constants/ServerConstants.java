@@ -28,7 +28,7 @@ public class ServerConstants {
     public static final long  COUPON_INTERVAL = 60 * 60 * 1000;	//60 minutes, 3600000.
     public static final long  UPDATE_INTERVAL = 777;            //Dictates the frequency on which the "centralized server time" is updated.
     
-    public static final boolean ENABLE_PIC = true;             //Pick true/false to enable or disable Pic. Delete character requires PIC available.
+    public static final boolean ENABLE_PIC = false;             //Pick true/false to enable or disable Pic. Delete character requires PIC available.
     public static final boolean ENABLE_PIN = false;             //Pick true/false to enable or disable Pin.
     
     public static final int BYPASS_PIC_EXPIRATION = 20;         //Enables PIC bypass, which will remain active for that account by that client machine for N minutes. Set 0 to disable.
@@ -159,7 +159,7 @@ public class ServerConstants {
     public static final float PARTY_BONUS_EXP_RATE = 1.0f;          //Rate for the party exp bonus reward.
     
     //Miscellaneous Configuration
-    public static String TIMEZONE = "GMT-3";
+    public static String TIMEZONE = "GMT+8";
     public static boolean USE_DISPLAY_NUMBERS_WITH_COMMA = true;        //Enforce comma on displayed strings (use this when USE_UNITPRICE_WITH_COMMA is active and you still want to display comma-separated values).
     public static boolean USE_UNITPRICE_WITH_COMMA = true;              //Set this accordingly with the layout of the unitPrices on Item.wz XML's, whether it's using commas or dots to represent fractions.
     public static final byte MAX_MONITORED_BUFFSTATS = 5;               //Limits accounting for "dormant" buff effects, that should take place when stronger stat buffs expires.
@@ -201,12 +201,12 @@ public class ServerConstants {
     public static final int CHSCROLL_STAT_RANGE = 6;            //Stat upgrade range (-N, N) on chaos scrolls.
     
     //Beginner Skills Configuration
-    public static final boolean USE_ULTRA_NIMBLE_FEET = true;   //Massive speed & jump upgrade.
-    public static final boolean USE_ULTRA_RECOVERY = true;      //Massive recovery amounts overtime.
-    public static final boolean USE_ULTRA_THREE_SNAILS = true;  //Massive damage on shell toss.
+    public static final boolean USE_ULTRA_NIMBLE_FEET = false;   //Massive speed & jump upgrade.
+    public static final boolean USE_ULTRA_RECOVERY = false;      //Massive recovery amounts overtime.
+    public static final boolean USE_ULTRA_THREE_SNAILS = false;  //Massive damage on shell toss.
     
     //Other Skills Configuration
-    public static final boolean USE_FULL_ARAN_SKILLSET = false; //Enables starter availability to all Aran job skills. Suggestion thanks to Masterrulax.
+    public static final boolean USE_FULL_ARAN_SKILLSET = true; //Enables starter availability to all Aran job skills. Suggestion thanks to Masterrulax.
     public static final boolean USE_FAST_REUSE_HERO_WILL = true;//Greatly reduce cooldown on Hero's Will.
     public static final boolean USE_ANTI_IMMUNITY_CRASH = true; //Crash skills additionally removes the mob's invincibility buffs. Suggestion thanks to Celestial.
     public static final boolean USE_UNDISPEL_HOLY_SHIELD = true;//Holy shield buff also prevents players from suffering dispel from mobs.
